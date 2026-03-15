@@ -1,82 +1,75 @@
-# Dog Registration Compliance Analysis
+# Dog Registration Compliance & Incentives Analysis
 
-**End-to-End Data Analytics Case Study**  
-*Analysing registration behaviour, late payments, and incentive program adoption for Hamilton City Council dog registrations (2020–2024).*
-
----
-
-## Project Overview
-
-This project examines dog registration compliance and the effectiveness of council incentive programs using publicly available data from the [Waikato Open Data Co-Lab](https://data-waikatolass.opendata.arcgis.com/).  
-It is a **self-directed portfolio project** conducted independently and is **not official work for Hamilton City Council**.
-
-Key objectives:  
-- Identify suburbs with higher rates of late dog registration  
-- Explore participation in council discount programs  
-- Examine potential relationships between late payments and incentives  
-- Provide interactive dashboards for suburb-level and time-based insights  
+**Author:** Gabriel Wu  
+**Date:** 15 March 2026  
+**Project Type:** End-to-End Data Analytics Case Study  
+**Data Source:** Hamilton City Council – Waikato Open Data Co-Lab (All datasets are licensed under the Creative Commons Attribution 4.0 New Zealand License.)
 
 ---
 
-## Data Sources
+## Overview
+This project analyses dog registration data (2020–2024) from Hamilton City Council to understand:  
 
-- **DimDog (Dimension Dog)** – Dog demographics and geographic information  
-- **FactRegistration (Dog Registration)** – Registration and fee data  
-- **FactTransaction (Dog Transaction)** – Payment behaviour and discount transactions  
+- Registration behaviour and seasonal trends  
+- Late payment patterns  
+- Uptake of council discount programs  
 
-All datasets are licensed under the Creative Commons Attribution 4.0 New Zealand License.
+Interactive dashboards and SQL analysis were used to highlight trends, support operational planning, and inform targeted communication strategies.  
+> **Disclaimer:** This project is a portfolio case study for demonstration purposes. 
+> The analysis uses publicly available Hamilton City Council data and is not official work conducted for the Council.
+
+---
+
+## Key Insights
+- **Seasonal Peaks:** Most dog registrations occur in July. Late payment penalties increase shortly after.  
+- **Suburb Variation:** High late-payment areas include Enderley, Bader, and Melville. Low late-payment areas include Huntington, Te Rapa, and Harrowfield.  
+- **Discount Program Uptake:** Participation in fencing, neutering, obedience, and permanent ID incentives varies widely by suburb.  
+- **Population Impact:** High-population suburbs (Nawton, Frankton, Hamilton East) have the greatest influence on overall compliance.  
+- **Data Quality:** Around 12–13% of records are missing payment or effective date information; monitoring is recommended.  
+
+---
+
+## Recommendations
+1. **Pre-Registration Reminders:** Launch campaigns in June to encourage early compliance.  
+2. **Targeted Outreach:** Focus communication on suburbs with higher late-payment rates.  
+3. **Promote Incentives:** Increase awareness of available discount programs.  
+4. **Prioritise High-Population Suburbs:** Target areas with the largest dog populations for maximum impact.  
+5. **Monitor Data Quality:** Regularly review registration and transaction records to ensure accurate reporting.  
+
+---
+
+## Data Overview
+The analysis uses three primary datasets:  
+
+| Dataset | Records | Purpose |
+|---------|--------|---------|
+| DimDog | 82,149 | Dog demographics and location |
+| FactRegistration | 323,196 | Registration and fee details |
+| FactTransaction | 1,550,635 | Payment and discount transactions |
+
+Key metrics include registration counts, late payment rates, discount uptake, and geographic trends.  
 
 ---
 
 ## Repository Contents
-
-dog-registration-compliance-analysis/
-│
-├── Dog_Registration_Report.PDF # Full project report
-├── data/
-│ ├── data_cleaning_script.sql # SQL for cleaning & preparing data
-│ └── eda_queries.sql # SQL queries for exploratory data analysis
-├── dashboards/
-│ └── dog_registration_compliance_incentive.pbix # Power BI dashboard
-├── img/ # Power BI dashboard screenshots
-└── README.md # Project overview and instructions
+- `eda_queries.sql` – Exploratory SQL queries  
+- `data_cleaning.sql` – Data cleaning scripts  
+- `dog_registration.pbix` – Power BI dashboard  
+- `dog_registration_analysis_report.pdf` – Full analysis and findings  
+- `images/` – Screenshots of dashboard visualisations  
 
 ---
 
-## Analytical Approach
-
-- **Data Cleaning** – SQL scripts to filter transactions, remove duplicates, and standardise categories  
-- **Exploratory Data Analysis (EDA)** – SQL and Power BI used to calculate late payment rates, discount uptake, and dog population distribution  
-- **Power BI Dashboards** – Interactive visualisations for registration trends, late payments, and incentive participation  
-- **Key Insights** – Seasonal peaks, geographic variation, and high-impact suburbs  
-- **Recommendations** – Targeted reminders, outreach, promotion of incentives, and ongoing data quality monitoring  
-
----
-
-## Key Findings
-
-- Registrations peak sharply in July each year  
-- Late payment rates vary significantly between suburbs  
-- Discount programs show uneven adoption, with **no consistent correlation** to late payment behaviour  
-- High-population suburbs have the greatest impact on overall compliance  
-
----
-
-## Notes
-
-- Missing values (~12–13% of payments/effective dates) may slightly affect calculations  
-- Descriptive analysis only; no causal relationships are established  
-- All dashboards and scripts are included for portfolio review  
-
----
-
-## Reports & Files
-
-**Power BI Dashboard:** Open `dog_registration_compliance_incentive.pbix` to interact with dashboards and explore suburb-level trends, registration patterns, and discount uptake.  
-**Report:** Review `Dog_Registration_Report.PDF` for the full analysis, key findings, and recommendations.  
-**SQL Scripts:**  
-
-- `data_cleaning_script.sql` – Contains the full data cleaning and transformation workflow. This script handles missing values, duplicates, and standardises data to prepare the raw dataset for analysis.  
-- `eda_queries.sql` – Performs exploratory analysis on the cleaned dataset, calculating key metrics such as late payment rates, discount uptake, and dog population distribution.  
-
+## How to Use
+1. Open the Power BI `.pbix` file to explore interactive dashboards.  
+2. Run SQL scripts in SQL Server to replicate data preparation and analysis*.  
+3. Reference visualisations and insights to inform compliance, communication, and policy decisions.
 *Note: Raw datasets from Waikato Open Data Co-Lab are used. Running the SQL scripts demonstrates the end-to-end workflow from raw data to analytical insights.*  
+
+---
+
+## References
+- [Hamilton City Council – Renew a Dog Registration](https://hamilton.govt.nz/do-it-online/pay-it/renew-a-dog-registration)  
+- [Waikato Open Data Co-Lab – Dog Dataset](https://data-waikatolass.opendata.arcgis.com/datasets/hcc::dog/about)  
+- [Waikato Open Data Co-Lab – Dog Registration Dataset](https://data-waikatolass.opendata.arcgis.com/datasets/hcc::dog-registration/about)  
+- [Waikato Open Data Co-Lab – Dog Transaction Dataset](https://data-waikatolass.opendata.arcgis.com/datasets/hcc::dog-transaction/about)  
