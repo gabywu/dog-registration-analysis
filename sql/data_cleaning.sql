@@ -76,7 +76,7 @@ EXEC sp_rename 'dbo.FactTransaction.Account_Number', 'Registration_Key', 'COLUMN
 
 
 /* -----------------------------------------------------
-3. Missing Data Audit – Assess NULL counts and percentages
+3. Missing Data Audit â€“ Assess NULL counts and percentages
    across key analytical fields in each table.
 ----------------------------------------------------- */
 
