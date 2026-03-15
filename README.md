@@ -23,17 +23,17 @@ Interactive dashboards and SQL analysis were used to highlight trends, support o
 
 This section summarises key insights from the Power BI dashboard. Screenshots are included for quick reference.
 
-### 1. Category Behaviour
-Visualises registration compliance by owner category, showing differences between compliant and default owners.  
-![Category Behaviour](images/category_behaviour.png)
+### 1. Overview KPIs
+Displays total registrations, late registration counts, discount uptake percentages, and key trends at a glance.  
+![Overview KPIs](images/overview_kpis.png)
 
 ### 2. Geographical Analysis
 Highlights suburbs with higher late payment rates and discount uptake, supporting targeted outreach.  
 ![Geographical Analysis](images/geographical_analysis.png)
 
-### 3. Overview KPIs
-Displays total registrations, late registration counts, discount uptake percentages, and key trends at a glance.  
-![Overview KPIs](images/overview_kpis.png)
+### 3. Category Behaviour
+Visualises registration compliance by owner category, showing differences between compliant and default owners.  
+![Category Behaviour](images/category_behaviour.png)
 
 ### 4. Star Schema Data Model
 Illustrates how dog registration and transaction data are structured in Power BI for efficient analysis.  
