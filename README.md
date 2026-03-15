@@ -19,6 +19,27 @@ Interactive dashboards and SQL analysis were used to highlight trends, support o
 > The analysis uses publicly available Hamilton City Council data and is not official work conducted for the Council.
 
 ---
+## Dashboard Highlights
+
+This section summarises key insights from the Power BI dashboard. Screenshots are included for quick reference.
+
+### 1. Category Behaviour
+Visualises registration compliance by owner category, showing differences between compliant and default owners.  
+![Category Behaviour](images/category_behaviour.png)
+
+### 2. Geographical Analysis
+Highlights suburbs with higher late payment rates and discount uptake, supporting targeted outreach.  
+![Geographical Analysis](images/geographical_analysis.png)
+
+### 3. Overview KPIs
+Displays total registrations, late registration counts, discount uptake percentages, and key trends at a glance.  
+![Overview KPIs](images/overview_kpis.png)
+
+### 4. Star Schema Data Model
+Illustrates how dog registration and transaction data are structured in Power BI for efficient analysis.  
+![Star Schema Power BI](images/star_schema_powerbi.png)
+
+---
 
 ## Key Insights
 - **Seasonal Peaks:** Most dog registrations occur in July. Late payment penalties increase shortly after.  
