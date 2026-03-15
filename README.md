@@ -83,8 +83,9 @@ Key metrics include registration counts, late payment rates, discount uptake, an
 
 ## How to Use
 1. Open the Power BI `.pbix` file to explore interactive dashboards.  
-2. Run SQL scripts in SQL Server to replicate data preparation and analysis*.  
+2. Run SQL scripts in SQL Server to replicate data preparation and analysis.  
 3. Reference visualisations and insights to inform compliance, communication, and policy decisions.
+   
 *Note: Raw datasets from Waikato Open Data Co-Lab are used. Running the SQL scripts demonstrates the end-to-end workflow from raw data to analytical insights.*  
 
 ---
